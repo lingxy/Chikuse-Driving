@@ -30,8 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 👇 Only one path line — point to the folder with index.html
-          path: ./mobile
+          path: ./mobile   # 👈 folder containing index.html
 
       - name: Deploy to GitHub Pages
         id: deployment
